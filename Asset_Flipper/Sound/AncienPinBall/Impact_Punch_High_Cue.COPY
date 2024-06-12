@@ -1,0 +1,230 @@
+Begin Object Class=SoundCue Name="Impact_Punch_High_Cue"
+   Begin Object Class=SoundNodeWavePlayer Name="SoundNodeWavePlayer_7"
+   End Object
+   Begin Object Class=SoundNodeWavePlayer Name="SoundNodeWavePlayer_6"
+   End Object
+   Begin Object Class=SoundNodeWavePlayer Name="SoundNodeWavePlayer_5"
+   End Object
+   Begin Object Class=SoundNodeWavePlayer Name="SoundNodeWavePlayer_4"
+   End Object
+   Begin Object Class=SoundNodeRandom Name="SoundNodeRandom_1"
+   End Object
+   Begin Object Class=SoundNodeModulator Name="SoundNodeModulator_1"
+   End Object
+   Begin Object Class=SoundCueGraph Name="SoundCueGraph_50"
+      Begin Object Class=SoundCueGraphNode_Root Name="SoundCueGraphNode_Root_50"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2091"
+         End Object
+      End Object
+      Begin Object Class=SoundCueGraphNode Name="SoundCueGraphNode_33"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2655"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2654"
+         End Object
+      End Object
+      Begin Object Class=SoundCueGraphNode Name="SoundCueGraphNode_195"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2666"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2665"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2664"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2663"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2662"
+         End Object
+      End Object
+      Begin Object Class=SoundCueGraphNode Name="SoundCueGraphNode_194"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2661"
+         End Object
+      End Object
+      Begin Object Class=SoundCueGraphNode Name="SoundCueGraphNode_193"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2660"
+         End Object
+      End Object
+      Begin Object Class=SoundCueGraphNode Name="SoundCueGraphNode_192"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2659"
+         End Object
+      End Object
+      Begin Object Class=SoundCueGraphNode Name="SoundCueGraphNode_191"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_2658"
+         End Object
+      End Object
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_7"
+      SoundWaveAssetPtr=/Game/Sounds/FightMatinee/Impact_Punch_High03.Impact_Punch_High03
+      GraphNode=SoundCueGraphNode'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_194'
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_6"
+      SoundWaveAssetPtr=/Game/Sounds/FightMatinee/Impact_Punch_High02.Impact_Punch_High02
+      GraphNode=SoundCueGraphNode'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_193'
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_5"
+      SoundWaveAssetPtr=/Game/Sounds/FightMatinee/Impact_Punch_High01.Impact_Punch_High01
+      GraphNode=SoundCueGraphNode'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_192'
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_4"
+      SoundWaveAssetPtr=/Game/Sounds/FightMatinee/Impact_Punch_High04.Impact_Punch_High04
+      GraphNode=SoundCueGraphNode'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_191'
+   End Object
+   Begin Object Name="SoundNodeRandom_1"
+      Weights(0)=1.000000
+      Weights(1)=1.000000
+      Weights(2)=1.000000
+      Weights(3)=1.000000
+      ChildNodes(0)=SoundNodeWavePlayer'Impact_Punch_High_Cue:SoundNodeWavePlayer_4'
+      ChildNodes(1)=SoundNodeWavePlayer'Impact_Punch_High_Cue:SoundNodeWavePlayer_5'
+      ChildNodes(2)=SoundNodeWavePlayer'Impact_Punch_High_Cue:SoundNodeWavePlayer_6'
+      ChildNodes(3)=SoundNodeWavePlayer'Impact_Punch_High_Cue:SoundNodeWavePlayer_7'
+      GraphNode=SoundCueGraphNode'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_195'
+   End Object
+   Begin Object Name="SoundNodeModulator_1"
+      ChildNodes(0)=SoundNodeRandom'Impact_Punch_High_Cue:SoundNodeRandom_1'
+      GraphNode=SoundCueGraphNode'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_33'
+   End Object
+   Begin Object Name="SoundCueGraph_50"
+      Begin Object Name="SoundCueGraphNode_Root_50"
+         Begin Object Name="EdGraphPin_2091"
+            PinType=(PinCategory="SoundNode",PinSubCategory="Root")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_33.EdGraphPin_2655'
+         End Object
+         Pins(0)=EdGraphPin'EdGraphPin_2091'
+         NodePosY=-58
+         NodeGuid=276A1F614073597AAC06D6BA2D81A989
+      End Object
+      Begin Object Name="SoundCueGraphNode_33"
+         Begin Object Name="EdGraphPin_2655"
+            PinName="Output"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_Root_50.EdGraphPin_2091'
+         End Object
+         Begin Object Name="EdGraphPin_2654"
+            PinName="Input"
+            PinFriendlyName=" "
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_195.EdGraphPin_2662'
+         End Object
+         SoundNode=SoundNodeModulator'Impact_Punch_High_Cue:SoundNodeModulator_1'
+         Pins(0)=EdGraphPin'EdGraphPin_2654'
+         Pins(1)=EdGraphPin'EdGraphPin_2655'
+         NodePosX=-176
+         NodePosY=-48
+         NodeGuid=8C34FAA14B14B1C037F6D9B8EB56A557
+      End Object
+      Begin Object Name="SoundCueGraphNode_195"
+         Begin Object Name="EdGraphPin_2666"
+            PinName="Input4"
+            PinFriendlyName=" "
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_194.EdGraphPin_2661'
+         End Object
+         Begin Object Name="EdGraphPin_2665"
+            PinName="Input3"
+            PinFriendlyName=" "
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_193.EdGraphPin_2660'
+         End Object
+         Begin Object Name="EdGraphPin_2664"
+            PinName="Input2"
+            PinFriendlyName=" "
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_192.EdGraphPin_2659'
+         End Object
+         Begin Object Name="EdGraphPin_2663"
+            PinName="Input"
+            PinFriendlyName=" "
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_191.EdGraphPin_2658'
+         End Object
+         Begin Object Name="EdGraphPin_2662"
+            PinName="Output"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_33.EdGraphPin_2654'
+         End Object
+         SoundNode=SoundNodeRandom'Impact_Punch_High_Cue:SoundNodeRandom_1'
+         Pins(0)=EdGraphPin'EdGraphPin_2662'
+         Pins(1)=EdGraphPin'EdGraphPin_2663'
+         Pins(2)=EdGraphPin'EdGraphPin_2664'
+         Pins(3)=EdGraphPin'EdGraphPin_2665'
+         Pins(4)=EdGraphPin'EdGraphPin_2666'
+         NodePosX=-400
+         NodePosY=-96
+         NodeGuid=3CEE9A65471D69B39BB170B89030A8FB
+      End Object
+      Begin Object Name="SoundCueGraphNode_194"
+         Begin Object Name="EdGraphPin_2661"
+            PinName="Output"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_195.EdGraphPin_2666'
+         End Object
+         SoundNode=SoundNodeWavePlayer'Impact_Punch_High_Cue:SoundNodeWavePlayer_7'
+         Pins(0)=EdGraphPin'EdGraphPin_2661'
+         NodePosX=-758
+         NodePosY=17
+         NodeGuid=9B8D0C0544D09034FF3761AD39362B83
+      End Object
+      Begin Object Name="SoundCueGraphNode_193"
+         Begin Object Name="EdGraphPin_2660"
+            PinName="Output"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_195.EdGraphPin_2665'
+         End Object
+         SoundNode=SoundNodeWavePlayer'Impact_Punch_High_Cue:SoundNodeWavePlayer_6'
+         Pins(0)=EdGraphPin'EdGraphPin_2660'
+         NodePosX=-758
+         NodePosY=-52
+         NodeGuid=C934737A4C9F91052A1703BB13DB0060
+      End Object
+      Begin Object Name="SoundCueGraphNode_192"
+         Begin Object Name="EdGraphPin_2659"
+            PinName="Output"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_195.EdGraphPin_2664'
+         End Object
+         SoundNode=SoundNodeWavePlayer'Impact_Punch_High_Cue:SoundNodeWavePlayer_5'
+         Pins(0)=EdGraphPin'EdGraphPin_2659'
+         NodePosX=-758
+         NodePosY=-122
+         NodeGuid=61A4EF0345382EE726B050A890EA082E
+      End Object
+      Begin Object Name="SoundCueGraphNode_191"
+         Begin Object Name="EdGraphPin_2658"
+            PinName="Output"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Impact_Punch_High_Cue:SoundCueGraph_50.SoundCueGraphNode_195.EdGraphPin_2663'
+         End Object
+         SoundNode=SoundNodeWavePlayer'Impact_Punch_High_Cue:SoundNodeWavePlayer_4'
+         Pins(0)=EdGraphPin'EdGraphPin_2658'
+         NodePosX=-758
+         NodePosY=-192
+         NodeGuid=3118F6B747C1CD57E97A478CADED50C7
+      End Object
+      Schema=Class'/Script/UnrealEd.SoundCueGraphSchema'
+      Nodes(0)=SoundCueGraphNode_Root'SoundCueGraphNode_Root_50'
+      Nodes(1)=SoundCueGraphNode'SoundCueGraphNode_33'
+      Nodes(2)=SoundCueGraphNode'SoundCueGraphNode_191'
+      Nodes(3)=SoundCueGraphNode'SoundCueGraphNode_192'
+      Nodes(4)=SoundCueGraphNode'SoundCueGraphNode_193'
+      Nodes(5)=SoundCueGraphNode'SoundCueGraphNode_194'
+      Nodes(6)=SoundCueGraphNode'SoundCueGraphNode_195'
+      bAllowDeletion=False
+      GraphGuid=A1C4823E424BCCD9EFFC4CBCB93C16C9
+   End Object
+   FirstNode=SoundNodeModulator'SoundNodeModulator_1'
+   VolumeMultiplier=0.700000
+   AllNodes(0)=SoundNodeModulator'SoundNodeModulator_1'
+   AllNodes(1)=SoundNodeWavePlayer'SoundNodeWavePlayer_4'
+   AllNodes(2)=SoundNodeWavePlayer'SoundNodeWavePlayer_5'
+   AllNodes(3)=SoundNodeWavePlayer'SoundNodeWavePlayer_6'
+   AllNodes(4)=SoundNodeWavePlayer'SoundNodeWavePlayer_7'
+   AllNodes(5)=SoundNodeRandom'SoundNodeRandom_1'
+   SoundCueGraph=SoundCueGraph'SoundCueGraph_50'
+   Duration=0.484229
+   AttenuationSettings=SoundAttenuation'/Game/Sounds/FightMatinee/Hit_Att.Hit_Att'
+End Object

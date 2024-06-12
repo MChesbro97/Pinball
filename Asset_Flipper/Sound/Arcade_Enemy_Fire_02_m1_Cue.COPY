@@ -1,0 +1,85 @@
+Begin Object Class=SoundCue Name="Arcade_Enemy_Fire_02_m1_Cue"
+   Begin Object Class=SoundNodeWavePlayer Name="SoundNodeWavePlayer_1"
+   End Object
+   Begin Object Class=SoundNodeModulator Name="SoundNodeModulator_1"
+   End Object
+   Begin Object Class=SoundCueGraph Name="SoundCueGraph_3"
+      Begin Object Class=SoundCueGraphNode_Root Name="SoundCueGraphNode_Root_3"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_31810"
+         End Object
+      End Object
+      Begin Object Class=SoundCueGraphNode Name="SoundCueGraphNode_3"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_31813"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_31812"
+         End Object
+      End Object
+      Begin Object Class=SoundCueGraphNode Name="SoundCueGraphNode_2"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_31811"
+         End Object
+      End Object
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_1"
+      SoundWaveAssetPtr=/Game/Sounds/Arcade_Enemy_Fire_02_m1.Arcade_Enemy_Fire_02_m1
+      GraphNode=SoundCueGraphNode'Arcade_Enemy_Fire_02_m1_Cue:SoundCueGraph_3.SoundCueGraphNode_2'
+   End Object
+   Begin Object Name="SoundNodeModulator_1"
+      ChildNodes(0)=SoundNodeWavePlayer'Arcade_Enemy_Fire_02_m1_Cue:SoundNodeWavePlayer_1'
+      GraphNode=SoundCueGraphNode'Arcade_Enemy_Fire_02_m1_Cue:SoundCueGraph_3.SoundCueGraphNode_3'
+   End Object
+   Begin Object Name="SoundCueGraph_3"
+      Begin Object Name="SoundCueGraphNode_Root_3"
+         Begin Object Name="EdGraphPin_31810"
+            PinType=(PinCategory="SoundNode",PinSubCategory="Root")
+            LinkedTo(0)=EdGraphPin'Arcade_Enemy_Fire_02_m1_Cue:SoundCueGraph_3.SoundCueGraphNode_3.EdGraphPin_31812'
+         End Object
+         Pins(0)=EdGraphPin'EdGraphPin_31810'
+         NodePosY=-58
+         NodeGuid=2445865448A7F94E943144B3F50A3CC3
+      End Object
+      Begin Object Name="SoundCueGraphNode_3"
+         Begin Object Name="EdGraphPin_31813"
+            PinName="Input"
+            PinFriendlyName=" "
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Arcade_Enemy_Fire_02_m1_Cue:SoundCueGraph_3.SoundCueGraphNode_2.EdGraphPin_31811'
+         End Object
+         Begin Object Name="EdGraphPin_31812"
+            PinName="Output"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Arcade_Enemy_Fire_02_m1_Cue:SoundCueGraph_3.SoundCueGraphNode_Root_3.EdGraphPin_31810'
+         End Object
+         SoundNode=SoundNodeModulator'Arcade_Enemy_Fire_02_m1_Cue:SoundNodeModulator_1'
+         Pins(0)=EdGraphPin'EdGraphPin_31812'
+         Pins(1)=EdGraphPin'EdGraphPin_31813'
+         NodePosX=-289
+         NodePosY=-8
+         NodeGuid=8BA693F343949C46C0D743B24BAC332C
+      End Object
+      Begin Object Name="SoundCueGraphNode_2"
+         Begin Object Name="EdGraphPin_31811"
+            PinName="Output"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Arcade_Enemy_Fire_02_m1_Cue:SoundCueGraph_3.SoundCueGraphNode_3.EdGraphPin_31813'
+         End Object
+         SoundNode=SoundNodeWavePlayer'Arcade_Enemy_Fire_02_m1_Cue:SoundNodeWavePlayer_1'
+         Pins(0)=EdGraphPin'EdGraphPin_31811'
+         NodePosX=-624
+         NodePosY=-96
+         NodeGuid=7BBFB12249CD39059ED50C81AF18D85A
+      End Object
+      Schema=Class'/Script/UnrealEd.SoundCueGraphSchema'
+      Nodes(0)=SoundCueGraphNode_Root'SoundCueGraphNode_Root_3'
+      Nodes(1)=SoundCueGraphNode'SoundCueGraphNode_2'
+      Nodes(2)=SoundCueGraphNode'SoundCueGraphNode_3'
+      bAllowDeletion=False
+      GraphGuid=443B6D4049A23CC279961DA3AE1898A9
+   End Object
+   FirstNode=SoundNodeModulator'SoundNodeModulator_1'
+   AllNodes(0)=SoundNodeWavePlayer'SoundNodeWavePlayer_1'
+   AllNodes(1)=SoundNodeModulator'SoundNodeModulator_1'
+   SoundCueGraph=SoundCueGraph'SoundCueGraph_3'
+   Duration=0.444667
+End Object

@@ -1,0 +1,87 @@
+Begin Object Class=SoundCue Name="Bell_Impact01_Cue"
+   Begin Object Class=SoundNodeWavePlayer Name="SoundNodeWavePlayer_0"
+   End Object
+   Begin Object Class=SoundNodeModulator Name="SoundNodeModulator_0"
+   End Object
+   Begin Object Class=SoundCueGraph Name="SoundCueGraph_2"
+      Begin Object Class=SoundCueGraphNode_Root Name="SoundCueGraphNode_Root_2"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_29359"
+         End Object
+      End Object
+      Begin Object Class=SoundCueGraphNode Name="SoundCueGraphNode_1"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_29362"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_29361"
+         End Object
+      End Object
+      Begin Object Class=SoundCueGraphNode Name="SoundCueGraphNode_0"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_29360"
+         End Object
+      End Object
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_0"
+      SoundWaveAssetPtr=/Game/Sounds/Bell_Impact01.Bell_Impact01
+      GraphNode=SoundCueGraphNode'Bell_Impact01_Cue:SoundCueGraph_2.SoundCueGraphNode_0'
+   End Object
+   Begin Object Name="SoundNodeModulator_0"
+      PitchMin=1.200000
+      PitchMax=1.500000
+      ChildNodes(0)=SoundNodeWavePlayer'Bell_Impact01_Cue:SoundNodeWavePlayer_0'
+      GraphNode=SoundCueGraphNode'Bell_Impact01_Cue:SoundCueGraph_2.SoundCueGraphNode_1'
+   End Object
+   Begin Object Name="SoundCueGraph_2"
+      Begin Object Name="SoundCueGraphNode_Root_2"
+         Begin Object Name="EdGraphPin_29359"
+            PinType=(PinCategory="SoundNode",PinSubCategory="Root")
+            LinkedTo(0)=EdGraphPin'Bell_Impact01_Cue:SoundCueGraph_2.SoundCueGraphNode_1.EdGraphPin_29361'
+         End Object
+         Pins(0)=EdGraphPin'EdGraphPin_29359'
+         NodePosY=-58
+         NodeGuid=61B0F3F544173A4C1B3258B758F78346
+      End Object
+      Begin Object Name="SoundCueGraphNode_1"
+         Begin Object Name="EdGraphPin_29362"
+            PinName="Input"
+            PinFriendlyName=" "
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Bell_Impact01_Cue:SoundCueGraph_2.SoundCueGraphNode_0.EdGraphPin_29360'
+         End Object
+         Begin Object Name="EdGraphPin_29361"
+            PinName="Output"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Bell_Impact01_Cue:SoundCueGraph_2.SoundCueGraphNode_Root_2.EdGraphPin_29359'
+         End Object
+         SoundNode=SoundNodeModulator'Bell_Impact01_Cue:SoundNodeModulator_0'
+         Pins(0)=EdGraphPin'EdGraphPin_29361'
+         Pins(1)=EdGraphPin'EdGraphPin_29362'
+         NodePosX=-289
+         NodePosY=-59
+         NodeGuid=7D7114BF40D4D66E3D7D30A6760A0430
+      End Object
+      Begin Object Name="SoundCueGraphNode_0"
+         Begin Object Name="EdGraphPin_29360"
+            PinName="Output"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SoundNode")
+            LinkedTo(0)=EdGraphPin'Bell_Impact01_Cue:SoundCueGraph_2.SoundCueGraphNode_1.EdGraphPin_29362'
+         End Object
+         SoundNode=SoundNodeWavePlayer'Bell_Impact01_Cue:SoundNodeWavePlayer_0'
+         Pins(0)=EdGraphPin'EdGraphPin_29360'
+         NodePosX=-560
+         NodePosY=-224
+         NodeGuid=A6B81D4E4667AF7F6DA9479F517E3630
+      End Object
+      Schema=Class'/Script/UnrealEd.SoundCueGraphSchema'
+      Nodes(0)=SoundCueGraphNode_Root'SoundCueGraphNode_Root_2'
+      Nodes(1)=SoundCueGraphNode'SoundCueGraphNode_0'
+      Nodes(2)=SoundCueGraphNode'SoundCueGraphNode_1'
+      bAllowDeletion=False
+      GraphGuid=CF3D5ADB4B26071B7D35E7A3CCE66EB5
+   End Object
+   FirstNode=SoundNodeModulator'SoundNodeModulator_0'
+   AllNodes(0)=SoundNodeWavePlayer'SoundNodeWavePlayer_0'
+   AllNodes(1)=SoundNodeModulator'SoundNodeModulator_0'
+   SoundCueGraph=SoundCueGraph'SoundCueGraph_2'
+   Duration=1.554906
+End Object
